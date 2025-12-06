@@ -1,6 +1,8 @@
 import { useEffect } from 'react';
 import { FiGithub, FiLinkedin, FiMail, FiPhone } from 'react-icons/fi';
-
+import { useEffect } from 'react';
+import { FiGithub, FiLinkedin, FiMail, FiPhone } from 'react-icons/fi';
+import AIChat from './components/AIChat.jsx';        // ← ADD THIS LINE
 function App() {
   useEffect(() => {
     document.title = "Vigneshwar Reddy Kasarla";
