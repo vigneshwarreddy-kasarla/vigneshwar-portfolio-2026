@@ -61,6 +61,15 @@ function App() {
         Made with ❤️ by Vigneshwar | 2025
       </footer>
     </div>
+          <footer className="text-center py-8">
+        Made with love by Vigneshwar | 2025
+      </footer>
+
+      <AIChat />        {/* ← ADD THIS LINE */}
+
+    </div>
+  );
+}
   );
 }
 
