@@ -1,76 +1,30 @@
-import { useState } from "react";
-import AIChat from "./components/AIChat";
+import { useEffect } from 'react';
+import { FiGithub, FiLinkedin, FiMail, FiPhone } from 'react-icons/fi';
+import AIChat from './components/AIChat.jsx';          // ← This makes the chat work
 
 function App() {
-  const [aiActive, setAiActive] = useState(false);
-
-  const handleAIActivated = () => {
-    setAiActive(true);
-  };
-
-  return (
-    <div
-      className={`min-h-screen w-full transition-all duration-700 ${
-        aiActive
-          ? "bg-gradient-to-br from-indigo-900 via-slate-900 to-black"
-          : "bg-gradient-to-br from-slate-950 via-slate-900 to-indigo-950"
-      }`}
-    >
-      <div className="mx-auto flex min-h-screen max-w-5xl flex-col items-center justify-center px-6">
-        <div
-          className={`w-full rounded-3xl border border-white/10 bg-white/5 p-8 text-center shadow-2xl backdrop-blur-xl transition-all duration-700 ${
-            aiActive ? "ai-active-glow" : ""
-          }`}
-        >
-          <h1 className="mb-2 text-3xl font-bold text-white">
-            🚀 Vigneshwar Reddy
-          </h1>
-
-          <p className="mb-6 text-sm text-slate-300">
-            AI Engineer • ML Developer • Data Analyst
-          </p>
-
-          <div className="mb-8 grid gap-4 md:grid-cols-2">
-            <ProjectCard
-              title="Storytelling Chatbot"
-              desc="GenAI system using LLaMA, Pinecone & MongoDB"
-            />
-            <ProjectCard
-              title="Parkinson’s Detection"
-              desc="SVM-based ML model with 92% accuracy"
-            />
-            <ProjectCard
-              title="AI Resume Screening"
-              desc="FastText + LLM based resume ranking system"
-            />
-            <ProjectCard
-              title="Data Analytics Simulations"
-              desc="Retail & Banking customer analytics"
-            />
-          </div>
-
-          <h2 className="mb-2 text-sm font-semibold uppercase tracking-widest text-slate-300">
-            AI Resume Assistant
-          </h2>
-
-          <AIChat onActivate={handleAIActivated} />
-
-          <p className="mt-8 text-xs text-slate-400">
-            © 2025 Vigneshwar Reddy
-          </p>
+  useEffect(() => {
+@@ -13,8 +14,8 @@ function App() {
+        <h1 className="text-5xl md:text-7xl font-bold mb-4">Vigneshwar Reddy Kasarla</h1>
+        <p className="text-xl md:text-2xl text-purple-400 mb-8">ECE '25 | AI + Full-Stack Engineer</p>
+        <div className="flex justify-center gap-6 text-3xl">
+          <a href="https://github.com/vigneshwarreddy-kasarla" target="_blank"><FiGithub /></a>
+          <a href="https://linkedin.com/in/vigneshwar-reddy-kasarla-" target="_blank"><FiLinkedin /></a>
+          <a href="https://github.com/vigneshwarreddy-kasarla" target="_blank" rel="noreferrer"><FiGithub /></a>
+          <a href="https://linkedin.com/in/vigneshwar-reddy-kasarla-" target="_blank" rel="noreferrer"><FiLinkedin /></a>
+          <a href="mailto:vigneshwarreddykasarla6@gmail.com"><FiMail /></a>
+          <a href="tel:+919666688877"><FiPhone /></a>
         </div>
-      </div>
+@@ -56,8 +57,11 @@ function App() {
+      </section>
+
+      <footer className="text-center py-8">
+        Made with ❤️ by Vigneshwar | 2025
+        Made with love by Vigneshwar | 2025
+      </footer>
+
+      {/* ← THIS LINE SHOWS THE AI CHAT BUBBLE */}
+      <AIChat />
     </div>
   );
 }
-
-function ProjectCard({ title, desc }) {
-  return (
-    <div className="rounded-xl border border-white/10 bg-slate-900/60 p-4 text-left text-white">
-      <h3 className="text-sm font-semibold">{title}</h3>
-      <p className="mt-1 text-xs text-slate-300">{desc}</p>
-    </div>
-  );
-}
-
-export default App;
