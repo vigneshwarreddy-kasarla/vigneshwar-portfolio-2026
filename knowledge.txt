@@ -1,0 +1,15 @@
+Name: Vigneshwar Reddy Kasarla
+Education: B.Tech ECE, Vignana Bharathi Institute of Technology (2021–2025)
+Location: Hyderabad
+Email: vigneshwarreddykasarla6@gmail.com
+Phone: +91 9666688877
+
+Projects:
+- Virtual Interactive Builder of Experiences (Storytelling Chatbot, Dec 2024–Jan 2025): Built with Llama 3.3 70B, Pinecone, MongoDB, FastAPI, React. Reduced generation time 40s → 10s, increased engagement 25%.
+- Parkinson’s Disease Detection Using SVM (Jan–Mar 2025): 92% accuracy on voice data, outperformed deep learning baselines.
+- AI Resume Screening System using Groq + Llama-3.1 (Sep–Nov 2025): Reduced manual screening by 30%.
+- Quantium & Commonwealth Bank Data Simulation (Mar–Apr 2025): ETL, uplift modeling, A/B testing.
+
+Skills: Python, FastAPI, React, Tailwind, AWS, Groq, Llama, Scikit-learn, Pandas, Git, Streamlit, MySQL, MongoDB, Pinecone
+
+Certifications: Azure OpenAI, Azure AI Document Intelligence, IBM Project Management, Conference Paper (Mar 2025)
