@@ -1,22 +1,24 @@
+import AIChat from "./components/AIChat";
+
 function App() {
   return (
-    <div className="container">
+    <div className="app">
       <h1>🚀 Vigneshwar Reddy Portfolio</h1>
-      <p>AI Engineer | ML Developer | Data Analyst</p>
+      <p className="subtitle">AI Engineer | ML Developer | Data Analyst</p>
 
       <section>
         <h2>Projects</h2>
         <ul>
-          <li>📌 Storytelling Chatbot (GenAI + LLaMA)</li>
-          <li>📌 Parkinson’s Disease Detection (SVM)</li>
-          <li>📌 AI Resume Screening System</li>
-          <li>📌 Data Analytics Simulations</li>
+          <li>✅ Storytelling Chatbot (GenAI + LLaMA)</li>
+          <li>✅ Parkinson’s Disease Detection (SVM)</li>
+          <li>✅ AI Resume Screening System</li>
+          <li>✅ Data Analytics Simulations</li>
         </ul>
       </section>
 
       <section>
-        <h2>AI Chat Assistant (RAG)</h2>
-        <p>Coming Soon: Ask my AI about my resume and projects.</p>
+        <h2>🤖 AI Resume Assistant</h2>
+        <AIChat />
       </section>
 
       <footer>
